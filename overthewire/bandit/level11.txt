@@ -1,0 +1,5 @@
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+
+cat data.txt | base64 -d
+
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR

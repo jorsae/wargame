@@ -1,0 +1,17 @@
+ssh bandit26@bandit.labs.overthewire.org -p 2220
+
+to escape from vim hell, run :shell
+
+:! /bin/bash does not work, because it's set to think it's shell is 'showtext'
+:set shell=/bin/bash
+:! /bin/bash
+OR 
+:shell
+both works
+
+bandit26@bandit:~$ ./bandit27-do 
+Run a command as another user.
+  Example: ./bandit27-do id
+
+
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z

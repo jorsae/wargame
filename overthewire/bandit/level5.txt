@@ -1,0 +1,7 @@
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+
+cd inhere
+ls -la
+cat ./*
+
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh

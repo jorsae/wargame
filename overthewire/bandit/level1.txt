@@ -1,0 +1,7 @@
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+password: bandit0 
+file is located in home dir for bandit0 in readme
+get the new password with: cat readme
+
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1

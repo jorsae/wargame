@@ -1,0 +1,5 @@
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+use tab to autofill ->
+spaces\ in\ this\ filename 
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK

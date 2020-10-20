@@ -1,0 +1,39 @@
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+
+bandit25@bandit:/home/bandit26$ ssh -i bandit26.sshkey bandit26@localhost
+kicks us out right away, can not use -t to execute as it's not bash
+
+bandit25@bandit:/home/bandit26$ cd /home/bandit26
+bandit25@bandit:/home/bandit26$ ls -la
+total 36
+drwxr-xr-x  3 root     root     4096 May  7 20:14 .
+drwxr-xr-x 41 root     root     4096 May  7 20:14 ..
+-rwsr-x---  1 bandit27 bandit26 7296 May  7 20:14 bandit27-do
+-rw-r--r--  1 root     root      220 May 15  2017 .bash_logout
+-rw-r--r--  1 root     root     3526 May 15  2017 .bashrc
+-rw-r--r--  1 root     root      675 May 15  2017 .profile
+drwxr-xr-x  2 root     root     4096 May  7 20:14 .ssh
+-rw-r-----  1 bandit26 bandit26  258 May  7 20:14 text.txt
+bandit25@bandit:/home/bandit26$ 
+
+cat text.txt, .bashrc, etc.. gives us nothing
+
+bandit25@bandit:/home/bandit26$ cat /etc/passwd | grep bandit26
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+bandit25@bandit:/home/bandit26$ cat /usr/bin/showtext
+#!/bin/sh
+
+export TERM=linux
+
+more ~/text.txt
+exit 0
+bandit25@bandit:/home/bandit26$ 
+bandit25@bandit:/home/bandit26$ ssh -i bandit26.sshkey bandit26@localhost;cat
+
+once more has finished reading the file it will exit the ssh connection
+if there is more text being read than can fit on the screen (console window) you have to press enter to read further
+make your console window small and open the ssh connection to not get booted off right away
+then press "v" to open vim
+open the password file with vim: e: /etc/bandit_pass/bandit26
+
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z

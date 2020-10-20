@@ -1,0 +1,14 @@
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+
+bandit20@bandit:~$ nc -l -p 5020
+ctrl+z
+screen -S a
+bandit20@bandit:~$ ./suconnect 5020
+ctrl+a to exit out of the screen
+bandit20@bandit:~$ fg
+nc -l -p 5020
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+bandit20@bandit:~$ 
+
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr

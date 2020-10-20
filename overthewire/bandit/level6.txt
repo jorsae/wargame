@@ -1,0 +1,9 @@
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+
+find . -size 1033c ! -executeable
+. = recursively all files under
+-size 1033c = 1033 bytes in size
+! -executeable = non-executeable | ! reverses it
+
+cat ./maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
