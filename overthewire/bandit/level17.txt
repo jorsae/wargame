@@ -1,4 +1,5 @@
 ssh bandit16@bandit.labs.overthewire.org -p 2220
+cluFn7wTiGryunymYOu4RcffSxQluehd
 
 bandit16@bandit:~$ for i in {31000..32000}; do     nmap --script ssl-cert -p $i localhost | grep tcp; done | grep -v 'closed'
 31046/tcp open  unknown

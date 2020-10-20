@@ -1,4 +1,5 @@
 ssh bandit5@bandit.labs.overthewire.org -p 2220
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
 find . -size 1033c ! -executeable
 . = recursively all files under

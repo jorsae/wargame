@@ -1,4 +1,6 @@
 ssh bandit25@bandit.labs.overthewire.org -p 2220
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
 
 bandit25@bandit:/home/bandit26$ ssh -i bandit26.sshkey bandit26@localhost
 kicks us out right away, can not use -t to execute as it's not bash

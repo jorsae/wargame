@@ -1,4 +1,5 @@
 ssh bandit18@bandit.labs.overthewire.org -p 2220
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 
 kali@kali:~$ ssh bandit18@bandit.labs.overthewire.org -p 2220 -t cat readme
 This is a OverTheWire game server. More information on http://www.overthewire.org/wargames

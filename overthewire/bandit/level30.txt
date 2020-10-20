@@ -1,0 +1,47 @@
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+bbc96594b4e001778eee9975372716b2
+
+bandit29@bandit:~$ mkdir /tmp/bb
+bandit29@bandit:~$ cd /tmp/bb
+bandit29@bandit:/tmp/bb$ git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+No older version with password or visible branches
+
+bandit29@bandit:/tmp/bb/repo$ cat $(grep -rlv "password" ./) > output
+bandit29@bandit:/tmp/bb/repo$ cat output
+see a lot of stuff, but mainly:
+bc833286fca18a3948aec989f7025e23ffc16c07 refs/remotes/origin/dev
+208f463b5b3992906eabf23c562eda3277fea912 refs/remotes/origin/master
+786d5bea2bd2dcbed2c8896a310c3c5306bc713c refs/remotes/origin/sploits-dev
+
+bandit29@bandit:/tmp/bb/repo$ git checkout -b dev
+Switched to a new branch 'dev'
+bandit29@bandit:/tmp/bb/repo$ git pull origin dev
+Could not create directory '/home/bandit29/.ssh'.
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+ECDSA key fingerprint is SHA256:98UL0ZWr85496EtCRkKlo20X3OPnyPSB5tB5RPbhczc.
+Are you sure you want to continue connecting (yes/no)? yes
+Failed to add the host to the list of known hosts (/home/bandit29/.ssh/known_hosts).
+This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
+
+bandit29-git@localhost's password: 
+From ssh://localhost/home/bandit29-git/repo
+ * branch            dev        -> FETCH_HEAD
+Updating 208f463..bc83328
+Fast-forward
+ README.md         | 2 +-
+ code/gif2ascii.py | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 code/gif2ascii.py
+
+bandit29@bandit:/tmp/bb/repo$ ls
+code  README.md
+bandit29@bandit:/tmp/ba/repo$ cat README.md 
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: 5b90576bedb2cc04c86a9e924ce42faf
+
+5b90576bedb2cc04c86a9e924ce42faf

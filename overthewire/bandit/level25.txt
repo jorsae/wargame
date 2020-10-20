@@ -1,4 +1,6 @@
 ssh bandit24@bandit.labs.overthewire.org -p 2220
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
 
 bandit24@bandit:/tmp/ii$ mkdir /tmp/ii
 bandit24@bandit:/tmp/ii$ for i in {1..9999}; do echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i"; done| nc localhost 30002 > /tmp/ii/output
@@ -8,6 +10,5 @@ Correct!
 The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
 Exiting.
-
 
 uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG

@@ -1,4 +1,5 @@
 ssh bandit21@bandit.labs.overthewire.org -p 2220
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
 
 bandit21@bandit:~$ cd /etc/cron.d
 bandit21@bandit:/etc/cron.d$ ls -la

@@ -1,4 +1,5 @@
 ssh bandit26@bandit.labs.overthewire.org -p 2220
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
 
 to escape from vim hell, run :shell
 
@@ -12,6 +13,13 @@ both works
 bandit26@bandit:~$ ./bandit27-do 
 Run a command as another user.
   Example: ./bandit27-do id
-
-
-5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+bandit26@bandit:~$ mkdir /tmp/ll
+bandit26@bandit:~$ cd /tmp/ll
+make file a
+    cat /etc/bandit_pass/bandit27 > /tmp/ll/b27
+bandit26@bandit:/tmp/ll$ chmod +x a
+bandit26@bandit:/tmp/ll$ chmod 777 a
+bandit26@bandit:/tmp/ll$ chmod 777 .
+bandit26@bandit:/tmp/ll$ ~/./bandit27-do ./a 
+bandit26@bandit:/tmp/ll$ cat b27 
+3ba3118a22e93127a4ed485be72ef5ea

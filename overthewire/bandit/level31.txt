@@ -1,0 +1,33 @@
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+5b90576bedb2cc04c86a9e924ce42faf
+
+Same concept clone repo in tmp folder
+bandit30@bandit:/tmp/oo/repo$ cat $(grep -rlv "password" ./) > output
+bandit30@bandit:/tmp/oo$ cat output
+finds:
+3aefa229469b7ba1cc08203e5d8fa299354c496b refs/remotes/origin/master
+f17132340e8ee6c159e0a4a6bc6f80e1da3b1aea refs/tags/secret
+
+bandit30@bandit:/tmp/oo/repo$ git checkout -b secret
+Switched to a new branch 'secret'
+bandit30@bandit:/tmp/oo/repo$ git pull origin secret
+
+
+
+# --- Config
+allowunannotated=$(git config --bool hooks.allowunannotated)
+allowdeletebranch=$(git config --bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --bool hooks.denycreatebranch)
+allowdeletetag=$(git config --bool hooks.allowdeletetag)
+allowmodifytag=$(git config --bool hooks.allowmodifytag)
+
+
+# --- Error messages
+warning: refname 'secret' is ambiguous.
+    Probably not this, seems to be because secret has a git tag 'secret' and branch name 'secret'.
+    NOT 100% SURE IF THIS IS THE CASE ^
+
+
+There are no candidates for merging among the refs that you just fetched.
+Generally this means that you provided a wildcard refspec which had no
+matches on the remote end.

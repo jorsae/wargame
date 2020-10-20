@@ -1,4 +1,5 @@
 ssh bandit9@bandit.labs.overthewire.org -p 2220
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 cat data.txt | grep -a ==
 

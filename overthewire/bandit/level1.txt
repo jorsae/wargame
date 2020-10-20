@@ -1,4 +1,5 @@
 ssh bandit0@bandit.labs.overthewire.org -p 2220
+bandit0
 
 password: bandit0 
 file is located in home dir for bandit0 in readme
