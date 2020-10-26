@@ -1,0 +1,8 @@
+http://natas10.natas.labs.overthewire.org/
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
+
+match everything in file: /etc/natas_webpass/natas11 + dictionary.txt
+. /etc/natas_webpass/natas11
+
+U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK

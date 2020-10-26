@@ -1,0 +1,11 @@
+http://natas8.natas.labs.overthewire.org/
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
+
+See source code: reverse all functions: 
+hex 2 bin
+reverse string
+base64 decode
+run level8.py to do it all to get: oubWYf2kBq
+
+W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl

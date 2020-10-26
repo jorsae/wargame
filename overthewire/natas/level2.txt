@@ -1,0 +1,7 @@
+http://natas2.natas.labs.overthewire.org/
+ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+
+view source: http://natas2.natas.labs.overthewire.org/files/pixel.png
+traverse to files/
+find file: http://natas2.natas.labs.overthewire.org/files/users.txt
+sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14

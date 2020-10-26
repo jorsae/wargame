@@ -1,0 +1,6 @@
+http://natas9.natas.labs.overthewire.org/
+W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+
+. /etc/natas_webpass/natas10;#
+
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu

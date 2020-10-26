@@ -1,0 +1,7 @@
+http://natas3.natas.labs.overthewire.org/
+sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+
+check robots.txt
+disallow: s3cr3t
+go to s3cr3t:
+Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ

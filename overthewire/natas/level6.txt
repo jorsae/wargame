@@ -1,0 +1,7 @@
+http://natas6.natas.labs.overthewire.org/
+aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+
+See source code and navigate to: includes/secret.inc
+Password for query is: FOEIUWGHFEEUHOFUOIU
+
+7z3hEENjQtflzgnT29q7wAvMNfZdh0i9

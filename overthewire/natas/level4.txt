@@ -1,0 +1,6 @@
+http://natas4.natas.labs.overthewire.org/
+Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+
+Add in header: referer: http://natas5.natas.labs.overthewire.org/
+
+iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
