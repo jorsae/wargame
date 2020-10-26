@@ -12,22 +12,8 @@ bandit30@bandit:/tmp/oo/repo$ git checkout -b secret
 Switched to a new branch 'secret'
 bandit30@bandit:/tmp/oo/repo$ git pull origin secret
 
-
-
-# --- Config
-allowunannotated=$(git config --bool hooks.allowunannotated)
-allowdeletebranch=$(git config --bool hooks.allowdeletebranch)
-denycreatebranch=$(git config --bool hooks.denycreatebranch)
-allowdeletetag=$(git config --bool hooks.allowdeletetag)
-allowmodifytag=$(git config --bool hooks.allowmodifytag)
-
-
-# --- Error messages
-warning: refname 'secret' is ambiguous.
-    Probably not this, seems to be because secret has a git tag 'secret' and branch name 'secret'.
-    NOT 100% SURE IF THIS IS THE CASE ^
-
-
-There are no candidates for merging among the refs that you just fetched.
-Generally this means that you provided a wildcard refspec which had no
-matches on the remote end.
+bandit30@bandit:/tmp/ll/repo/.git/refs$ git tag
+secret
+bandit30@bandit:/tmp/ll/repo/.git/refs$ git show secret
+47e603bb428404d265f59c42920d81e5
+bandit30@bandit:/tmp/ll/repo/.git/refs$ 
