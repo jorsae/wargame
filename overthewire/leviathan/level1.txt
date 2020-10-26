@@ -1,0 +1,14 @@
+ssh leviathan1@leviathan.labs.overthewire.org -p 2223
+rioGegei8m
+
+strings check
+finds nothing
+
+less check and browsing finds "sex god" as string
+E5>SQ<83><EC> <C7>E<F0>sex^@<C7>E<E9>secrf<C7>E<ED>et<C6>E<EF>^@<C7>E<E5>god^@<C7>E<E0>love<C6>E<E4>^@<83><EC>^Lh<90><86>^D^H<E8><<FE><FF><FF><83><C4>^P<E8>D<FE><FF
+and it's the password
+
+After more testing "sex" also works
+
+
+ougahZi8Ta
