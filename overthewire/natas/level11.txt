@@ -1,3 +1,9 @@
 http://natas11.natas.labs.overthewire.org/
 U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
 
+run level11.py
+
+set cookie 'data' to the new cookie
+refresh page
+
+EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
