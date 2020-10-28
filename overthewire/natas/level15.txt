@@ -1,2 +1,7 @@
 http://natas15.natas.labs.overthewire.org/
 AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
+
+run level15.py
+it will bruteforce the password 1 character at a time
+
+WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
