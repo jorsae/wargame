@@ -1,0 +1,10 @@
+http://natas14.natas.labs.overthewire.org/
+EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+
+You can upload a php reverse shell, change the client side file name to .php and just navigate to it
+
+when fetching the password remember to make the command url safe
+
+python -c 'from urllib import quote;print(quote("cat /etc/natas_webpass/natas13"));'
+
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY

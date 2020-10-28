@@ -1,0 +1,8 @@
+http://natas14.natas.labs.overthewire.org/
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
+
+username: natas14
+password: asd"or 1=1;#
+
+
+AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
