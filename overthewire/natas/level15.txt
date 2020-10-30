@@ -4,4 +4,18 @@ AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
 run level15.py
 it will bruteforce the password 1 character at a time
 
+Explanation:
+You have sql injection, however you can't actually fetch all the text you want.
+e.g. you can't just select password from users and output the password.
+You can do it with a union, but can't actually get the page to return the password.
+However you can use boolean checks, because the website will return
+"This user exists" if it's true, and "This user doesn't exist" if the query is false
+
+However you can do a bool check. So you can test a user, in this case "natas16" and check if the password is equal to a character%
+% as a wildcard, and then you can iterate through all alpha numberic characters you want to test.
+
+
+Effectively creating a bruteforce, but you only need to bruteforce 1 char at a time, so it's a lot faster.
+
+
 WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
