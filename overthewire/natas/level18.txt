@@ -1,0 +1,9 @@
+http://natas18.natas.labs.overthewire.org/
+xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP
+
+Sessions can be between 1-640.
+Can just bruteforce all possible session ids
+
+run level18.py
+
+4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs
