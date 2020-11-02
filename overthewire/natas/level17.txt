@@ -1,3 +1,11 @@
 http://natas17.natas.labs.overthewire.org/
 8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
 
+The same concept as in level15.
+The difference is that we do not have the output lines to differentiate if
+the query was successfull or not.
+We add a sleep command and use time as the determining factor, whether the query was successfull or not.
+
+run level17.py
+
+xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP
