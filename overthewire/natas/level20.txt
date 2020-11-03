@@ -1,0 +1,6 @@
+http://natas20.natas.labs.overthewire.org/
+eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
+
+php -f a.php -S localhost:8000
+
+http://localhost:8000/a.php
