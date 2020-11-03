@@ -1,0 +1,7 @@
+http://natas19.natas.labs.overthewire.org/
+4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs
+
+Trying to log in, see the sessionid is just hex, bruteforce it again.
+run level19.py
+
+eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
