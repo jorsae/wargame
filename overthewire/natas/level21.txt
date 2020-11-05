@@ -1,2 +1,13 @@
-http://natas20.natas.labs.overthewire.org/
+http://natas21.natas.labs.overthewire.org/
 IFekPyrQXftziDEsUr3x21sYuahypdgJ
+
+No input on the main page, so you have to be able to set "admin 1" on the natas21-experimenter.
+They will share the session as their tld is the same, only the subdomain is different.
+
+If you send a request with ?debug, you can see that [debug] => shows up as a key.
+So if we try to send "&admin=1" it will work.
+Something like this: ?debug&admin=1
+
+run level21.py
+
+chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
