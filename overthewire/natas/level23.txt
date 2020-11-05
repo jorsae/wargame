@@ -1,2 +1,14 @@
 http://natas20.natas.labs.overthewire.org/
 D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
+
+Wrote my own php script to test: see level23.php
+If we pass "iloveyou", we fulfill the first criteria.
+If we pass "20", we fulfill the second criteria.
+We need to combine this together.
+
+Looking at php docs for strstr : https://www.php.net/manual/en/function.strstr.php
+We can see that strstr "Find the first occurrence of a string"
+
+Try to have a number first like 20iloveyou and it works!
+
+OsRmXFguozKpTZZ5X14zNO43379LZveg
