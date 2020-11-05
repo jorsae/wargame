@@ -1,6 +1,22 @@
 http://natas20.natas.labs.overthewire.org/
 eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
 
-php -f a.php -S localhost:8000
+The vulnerability is in mywrite and myread.
+To be a admin a flag $_SESSION["admin"] = 1, has to be set
 
-http://localhost:8000/a.php
+mywrite:
+The users session is stored in a file and saved.
+
+myread:
+Tries to read the user session to store it.
+If we can get admin 1, to be stored here, we will be granted admin and can read the flag.
+myread will read the file one line at a time, the first being set to user.
+What we can do is to add more than one line at a time.
+So if we can add user <username> and then admin 1, in one go, we can refesh and become admin.
+
+run level20.py to exploit this vulnerability.
+
+php -f a.php -S localhost:8000
+To test it locally.
+
+IFekPyrQXftziDEsUr3x21sYuahypdgJ
