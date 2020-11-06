@@ -9,7 +9,7 @@ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Basic bmF0YXMyMjpjaEc5ZmJlMVRxMmVXVk1nallZRDFNc2ZJdk40NjFrSg==
+Authorization: Basic <censored>
 Connection: close
 Cookie: __utma=176859643.1352357629.1604541629.1604541629.1604541629.1; __utmb=176859643.5.10.1604541629; __utmz=176859643.1604541629.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; PHPSESSID=537fgrcjp1la475macscpg6gd2
 Upgrade-Insecure-Requests: 1

