@@ -1,4 +1,4 @@
-http://natas20.natas.labs.overthewire.org/
+http://natas23.natas.labs.overthewire.org/
 D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
 
 Wrote my own php script to test: see level23.php

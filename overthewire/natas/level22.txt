@@ -1,4 +1,4 @@
-http://natas20.natas.labs.overthewire.org/
+http://natas22.natas.labs.overthewire.org/
 chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
 
 Intercepted with burp and added ?revelio/admin=1 to GET request
