@@ -1,0 +1,6 @@
+Found username/password in huge js file
+Logged in.
+Found that the gif is placed in a .secret_area folder
+Found all emails
+Tried to send email to all of the ones listed manually
+-> Got flag
