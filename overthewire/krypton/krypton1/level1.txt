@@ -1,0 +1,6 @@
+ssh krypton1@krypton.labs.overthewire.org -p 2231
+KRYPTONISGREAT
+
+
+YRIRY GJB CNFFJBEQ EBGGRA
+LEVEL TWO PASSWORD ROTTEN
