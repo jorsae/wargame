@@ -1,7 +1,7 @@
 """
 Lernaean
     
-Flag: HTB{l1k3_4_b0s5_s0n}
+Flag: HTB{}
 """
 import requests
 
@@ -32,4 +32,3 @@ r = s.post(url, data={'password':'leonardo'}, cookies=s.cookies, allow_redirects
 print(r.text)
 print(r.headers)
 print(r.url)
-# -> HTB{l1k3_4_b0s5_s0n}
