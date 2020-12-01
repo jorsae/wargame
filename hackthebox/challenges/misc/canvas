@@ -1,3 +1,6 @@
+Ran login.js through a beautifier
+Ran this python script to hex to ascii a lot of the hex
+
 import re
 
 f = open('main.js').read()
