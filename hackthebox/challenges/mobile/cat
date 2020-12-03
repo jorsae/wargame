@@ -5,4 +5,4 @@ You get a .ab file which is a android backup file
 Extract the content with:
 ( printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" ; tail -c +25 <filename> ) |  tar xfvz -
 
-look through the data and in a image("IMAG0001.jpg") you can see the flag
+look through the data and in a image("IMAG0004.jpg") you can see the flag
