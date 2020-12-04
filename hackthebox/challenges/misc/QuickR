@@ -1,0 +1,10 @@
+run QuickR_src.py
+
+Before, start wireshark
+make terminal full screen
+make terminal font-size smaller
+
+run the program till it says "sent answer"
+then exit the program
+
+go to wireshark, follow the tcp stream to get the flag
