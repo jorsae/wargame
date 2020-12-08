@@ -4,12 +4,12 @@ make program to write the program of the directory in the order of the filenames
 import os, re
 import glob
 
-folder_list = glob.glob('.secret/*', recursive=True)
+folder_list = glob.glob('.secret/*')
 
 order = []
 for folder in folder_list:
     folder_letter = folder.replace('.secret/', '')
-    for dirpath, dirnames, files in os.walk(folder):
+    for _, _, files in os.walk(folder):
         for f in files:
             if int(f) <= 9:
                 f = '0'+f
