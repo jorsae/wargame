@@ -1,20 +1,21 @@
+import sys
 import re
 import time
 import socket
 from PIL import Image, ImageGrab
 from pyzbar.pyzbar import decode
 
-server = ('178.128.40.63', 32308)
+server = (sys.argv[1], int(sys.argv[2]))
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.settimeout(30)
 s.connect(server)
+s.setblocking(True)
 data = ''
 try:
     while True:
         msg = s.recv(1024)
         data += msg.decode('utf-8')
-        if 'string' in data:
+        if 'Wrong!' in data or 'ecoded string' in data:
             break
 except Exception as e:
     print(e)
@@ -34,16 +35,15 @@ total = eval(math_string[:len(math_string) - 3])
 total = str(total).encode()
 
 try:
-    s.sendall(total)
+    s.send(total)
+    s.send('\n'.encode())
     print(f'sent result: {total}')
 except Exception as e:
     print(e)
 
+
 try:
-    while True:
-        ans = s.recv(1024)
-        print(f'{answers}: {ans}')
+    ans = s.recv(1024).decode('utf-8')
+    print(f'{ans}')
 except Exception as e:
     print(e)
-
-print('DONE')
