@@ -1,0 +1,21 @@
+Checked strings, online stegtools, got nothing
+
+steghide with password extract got flag.txt
+
+flag.txt contains base64 strings recursively.
+Write program to decode base64
+
+import base64, sys
+import codecs
+
+data = open(sys.argv[1], 'rb').read().strip()
+while True:
+    try:
+        data = base64.b64decode(data)
+    except:
+        print(data)
+        break
+
+
+Finds something that looks like rot13.
+It's not rot13, but it's rot14. Remember to not rotate numbers as well!
